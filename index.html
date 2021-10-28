@@ -17,9 +17,9 @@
   </head>
   <body>
     <!-- Navbar -->
-     <section id="home">
+    <section id="home">
     <header class="landing">
-      <img class="vid" src="images/pexels-errin-casano-2356059.jpg" />
+      <!-- <img class="vid" src="images/pexels-errin-casano-2356059.jpg" /> -->
       <nav class="navbar navbar-light bg-lightsilver fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
@@ -68,9 +68,6 @@
                   <a class="nav-link" href="#work&edu">Work & Education</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
                   <a class="nav-link" href="#pro">Project/My work</a>
                 </li>
                 <li class="nav-item">
@@ -89,11 +86,11 @@
       <!-- Hero text -->
       <div class="container">
         <div class="text">
-          <h1 class="display-1 animate__animated animate__fadeInUp">Hi,my name is Bongani Nomangola</h1>
+          <h1 class="display-1 text-dark animate__animated animate__fadeInUp">Hi,my name is Bongani Nomangola</h1>
           <p class="display-3">I'm an aspiring Web Developer.</p>
-          <button class="btn"><a href="#about">
+          <a href="#about" class="btn">
             Click to find out more. <i class="bi bi-arrow-right-short"></i></a>
-          </button>
+          
         </div>
       </div>
       </section>
@@ -104,7 +101,10 @@
     <section id="about">
       <div class="container-lg m-center p-3 shadow-lg">
             <div class="row justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">
+              <div class="col-md-5 text-center text-md-start">
+                    <img class="img-fluid" src="images/bongs.jpg" alt="">
+                </div>
+                <div class="col-md-5 d-none d-md-block">
                     <h1>
                         <div class="display-2 animate__animated animate__bounceInLeft">About Me</div>
                     </h1>
@@ -113,61 +113,104 @@
                       <li>D.O.B:<span>24/02/2001</span></li>
                       <li>Gender:<span>Male</span></li>
                     </ul>
-                </div>
-                <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="images/bongs.jpg" alt="">
+                    <br>
+                    <p class="lead my-4 text-dark" >A dedicated and focused individual who can also display a fun-loving and sociable character.Willing to learn new things and able to communicate with my peers when I'm in need of help,as I do the same for my peers.</p>
+                    <p class="lead my-4">A friend of mine that was exposed to computers at a young age.We met in high school and introduced me to IT and the vast branches that are in IT, Coding caught my eye and I started to become interested in Coding.</p>
                 </div>
             </div>
             <br>
-            <hr>
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-5 text-center text-md-start">
-         <div class="display-3">
-          <h1>
-            <div class="display-2 text-dark">Bio</div>
-          </h1>
-          <p class="lead my-4 text-dark" >A dedicated and focused individual who can also display a fun-loving and sociable character.Willing to learn new things and able to communicate with my peers when I'm in need of help,as I do the same for my peers.</p>
-         </div>
-        </div>
-      <div class="col-md-5 text-center d-none d-md-block">
-          <h1>
-            <div class="display-4">Where my passion for coding start:</div>
-          </h1>
-          <p>A friend of mine that was exposed to computers at a young age.We met in high school and introduced me to IT and the vast branches that are in IT, Coding caught my eye and I started to become interested in Coding.</p>
-         </div>
-         </div>
-         <br>
-         <hr>
-          <div class="row justify-content-center align-items-center">
-            <div class="col-md-5 text-center text-md-start">
-             <div class="display-3">
-               <h1>
-                <div class="display-2 text-dark">Passion Board</div>
-               </h1>
-            </div>
-            <ul class="lead my-4">
-              <li>Listening to music</li>
-              <li>Watching Tech related videos</li>
-              <li>Sports</li>
-            </ul>
-          </div>
-          <br>
         </section>
+        <!--About section-->
         <br>
         <section id="work&edu">
           <div class="container-lg m-end-3 p-3 shadow-lg">
             <h1 class="display-2 text-center animate__animated animate__bounceInLeft">Work & Education</h1>
             <br>
-            <ul class="timeline">
-	            <li data-year="2014" data-text="Graduated from Hyacinth Primary (Lentergeur)"></li>
-	            <li data-year="2018/9" data-text="Completed my matric with a Deploma's Certificate"></li>
-	            <li data-year="2019" data-text="Worked at Haagen Dazs/Ice Cream man"></li>
-	            <li data-year="2020" data-text="Enrolled at an IT facility doing User Support"></li>
-	            <li data-year="2021" data-text="Currently doing Coding at LIfe Choices"></li>
-            </ul>
+            <section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+			</div>
+
+			<div class="cd-timeline-content">
+				<h2>Penta Consulting</h2>
+        <div class="timeline-content-info">
+          <span class="timeline-content-info-title">
+            <i class="fa fa-certificate" aria-hidden="true"></i>
+            Front End Developer
+          </span>
+          <span class="timeline-content-info-date">
+            <i class="fa fa-calendar-o" aria-hidden="true"></i>
+            June 2016 - Present
+          </span>
+        </div>
+				<p>Working alongside the designer team implementing the designs, also developing custom solutions to address team necessities.</p>
+        <ul class="content-skills">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>Wordpress</li>
+        </ul>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+				<span class="cd-date">Jan 18</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+				<span class="cd-date">Jan 24</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 4</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<span class="cd-date">Feb 14</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+			</div> 
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 5</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+				<span class="cd-date">Feb 18</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Final Section</h2>
+				<p>This is the content of the last section</p>
+				<span class="cd-date">Feb 26</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+	</section> <!-- cd-timeline -->
             <br>
-            <hr>
-             <div class="row justify-content-center align-items-center">
+            <div class="row justify-content-center align-items-center">
             <h1 class="display-2 text-center">Skills</h1> 
             <div class="col-md-5 text-center d-none d-md-block">
           <div class="display-2 text-dark">Soft skills</div>
@@ -176,31 +219,32 @@
             <li>Problem-solving</li>
             <li>Teamwork</li>
           </ul>
-         </div>
-         <div class="col-md-6 text-center text-md-6">
-           <div class="display-3">
-             <h1>
-               <div class="display-2 text-dark">Technical skills</div>
-             </h1>
-           </div>
-           <ul>
-             <li>Microsoft Office</li>
-             <li>Android</li>
-             <li>HTML,CSS & Bootstrap</li>
-           </ul>
-         </div>
+        </div>
+        <div class="col-md-6 text-center text-md-6">
+          <div class="display-3">
+            <h1>
+              <div class="display-2 text-dark">Technical skills</div>
+            </h1>
+          </div>
+          <div class="container2">
+      <img class="skills" src="https://images.unsplash.com/photo-1569390173732-5c735072c80f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+      <img class="skills" src="https://images.unsplash.com/photo-1582842195329-6a0baffd2a39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+      <img class="skills" src="https://images.unsplash.com/photo-1600722230999-22c256d38cb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+    </div>
+        </div>
           </div>
           </div>
         </section>
         <br>
         <hr>
+        <!--Projects-->
         <section id="pro">
         <h1 class="display-2 text-center animate__animated animate__bounceInLeft">My Portfolio</h1>
         <div class="row row-cols-1 row-cols-md-2 g-4">
   <div class="col">
     <div class="card">
       <img class="pop" src="images/Screenshot from 2021-10-27 10-27-31.png" class="card-img-top" alt="...">
-     <div class="card-body">
+    <div class="card-body">
     <h5 class="card-title">Card title</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   </div>
@@ -209,7 +253,7 @@
   </ul>
   <div class="card-body text-center">
     <a href="https://github.com/Teddy1824/Challenge-3" class="card-link"><span class="iconify" data-icon="icon-park:github"></span></a>
-    <a href="https://awesome-lamport-045ff6.netlify.app" class="card-link"><span class="iconify" data-icon="logos:netlify"></span></a>
+    <a href="https://awesome-lamport-045ff6.netlify.app" class="card-link" target="_blank"><span class="iconify" data-icon="logos:netlify"></span></a>
   </div>
     </div>
   </div>
@@ -263,8 +307,10 @@
   </div>
 </div>
 </section>
+<!--Project-->
 <br>
 <hr>
+<!--Testimonials-->
 <section id="test">
 <h1 class="display-2 text-center animate__animated animate__bounceInLeft">Testimonials</h1>
 <div class="slider">
@@ -309,12 +355,14 @@
 		</div>
 	</div>
 </section>
+<!--Testimonials-->
 <br>
 <hr>
+<!--Contact-->
 <section id="contact">
 <h1 class="display-2 text-center animate__animated animate__bounceInLeft">Contact me</h1>
 <div class="container">
-<form class="row g-3" method="post">
+<form class="row g-3" action="https://formspree.io/f/mbjqevpb" method="post">
   <div class="col-md-6">
     <label for="inputEmail4" class="form-label">Name</label>
     <input type="text" class="form-control" name="name" id="name" placeholder="Sam">
@@ -323,19 +371,20 @@
     <label for="inputPassword4" class="form-label">Surname</label>
     <input type="password" class="form-control" name="surname" id="surname" placeholder="Davids">
   </div>
-  <div class="col-12">
+  <div class="col-6">
     <label for="inputAddress" class="form-label">Contact Number</label>
-    <input type="text" class="form-control" name="contact_number" id="contact" placeholder="012345678/9">
+    <input type="text" class="form-control" name="contact_number" id="contact" placeholder="012345678/9" required>
   </div>
-  <div class="col-12">
+  <div class="col-6">
     <label for="inputAddress2" class="form-label">Email Address</label>
-    <input type="text" class="form-control" name="email" id="email" placeholder="abc@unknown.com">
+    <input type="text" class="form-control" name="email" id="email" placeholder="abc@unknown.com" required>
   </div>
   <div class="col-12 text-center">
     <button type="submit" class="btn btn-primary">Sign in</button>
   </div>
 </form>
 </section>
+<!--Contact-->
 </div>
     <script src="bootstrap.bundle.min.js"></script>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
