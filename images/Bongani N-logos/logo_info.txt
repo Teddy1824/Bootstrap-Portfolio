@@ -3,5 +3,5 @@
 
             Colors used: E2E2E2,171717  
 
-            Icon url: https://thenounproject.com/term/bear/66263  
+            Icon url: https://thenounproject.com/term/bear/485501  
         
