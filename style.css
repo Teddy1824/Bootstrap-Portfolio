@@ -156,6 +156,20 @@ section:not(.about):nth-child(even) {
   border-radius: 25px;
 }
 
+.buttom {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 5%;
+  background: silver;
+  border: 0;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  padding: 10px 25px;
+  color: #000;
+  border-radius: 25px;
+}
+
 .btn:hover {
   color: black;
   background-color: silver;
