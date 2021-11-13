@@ -11,22 +11,234 @@ body {
 }
 
 #home {
-  background-image: url("images/Background\ images/veeterzy-sMQiL_2v4vs-unsplash.jpg");
+  background-image: linear-gradient (rgba(0,0,0,0.5), rgba(0,0,0.5)), url("images/Background images/forrest.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.col-md-2 {
+  display: contents;
+}
+
+.progress {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+  text-align: center;
+  padding-left: 39px;
+}
+.progress:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 7px solid #eee;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress > span {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.progress .progress-left {
+  left: 0;
+}
+.progress .progress-bar {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border-width: 7px;
+  border-style: solid;
+  position: absolute;
+  top: 0;
+  border-color: #ffb43e;
+}
+.progress .progress-left .progress-bar {
+  left: 100%;
+  border-top-right-radius: 75px;
+  border-bottom-right-radius: 75px;
+  border-left: 0;
+  -webkit-transform-origin: center left;
+  transform-origin: center left;
+}
+.progress .progress-right {
+  right: 0;
+}
+.progress .progress-right .progress-bar {
+  left: -100%;
+  border-top-left-radius: 75px;
+  border-bottom-left-radius: 75px;
+  border-right: 0;
+  -webkit-transform-origin: center right;
+  transform-origin: center right;
+}
+.progress .progress-value {
+  display: flex;
+  border-radius: 50%;
+  font-size: 36px;
+  text-align: center;
+  line-height: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-weight: 300;
+}
+.progress .progress-value div {
+  margin-top: 10px;
+}
+.progress .progress-value span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* This for loop creates the 	necessary css animation names 
+Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+*/
+.progress[data-percentage="10"] .progress-right .progress-bar {
+  animation: loading-1 1.5s linear forwards;
+}
+.progress[data-percentage="10"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="20"] .progress-right .progress-bar {
+  animation: loading-2 1.5s linear forwards;
+}
+.progress[data-percentage="20"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="30"] .progress-right .progress-bar {
+  animation: loading-3 1.5s linear forwards;
+}
+.progress[data-percentage="30"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="40"] .progress-right .progress-bar {
+  animation: loading-4 1.5s linear forwards;
+}
+.progress[data-percentage="40"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="50"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="50"] .progress-left .progress-bar {
+  animation: 0;
+}
+
+.progress[data-percentage="60"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="60"] .progress-left .progress-bar {
+  animation: loading-1 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="70"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="70"] .progress-left .progress-bar {
+  animation: loading-2 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="80"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="80"] .progress-left .progress-bar {
+  animation: loading-3 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="90"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="90"] .progress-left .progress-bar {
+  animation: loading-4 1.5s linear forwards 1.5s;
+}
+
+.progress[data-percentage="100"] .progress-right .progress-bar {
+  animation: loading-5 1.5s linear forwards;
+}
+.progress[data-percentage="100"] .progress-left .progress-bar {
+  animation: loading-5 1.5s linear forwards 1.5s;
+}
+
+@keyframes loading-1 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(36);
+    transform: rotate(36deg);
+  }
+}
+@keyframes loading-2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(72);
+    transform: rotate(72deg);
+  }
+}
+@keyframes loading-3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(108);
+    transform: rotate(108deg);
+  }
+}
+@keyframes loading-4 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(144);
+    transform: rotate(144deg);
+  }
+}
+@keyframes loading-5 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180);
+    transform: rotate(180deg);
+  }
+}
+.progress {
+  margin-bottom: 1em;
 }
 
 .msg {
   font-size: x-large;
   text-transform: uppercase;
-  letter-spacing: 0.5em;
+  letter-spacing: 0.2em;
   display: inline-block;
   border: 4px double rgba(255, 255, 255, 0.25);
   color: #fff;
   border-width: 4px 0;
-  padding: 1.5em 0em;
+  padding: 1.0em 0em;
   left: 50%;
-  width: 40em;
+  width: 30em;
   margin: 0 0 0 0em;
   text-align: center;
   justify-content: center;
@@ -81,6 +293,7 @@ header {
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+  width: 50%;
 }
 
 .navbar {
@@ -88,6 +301,19 @@ header {
   height: 60px;
   position: fixed;
   width: 100%;
+}
+
+.img2 {
+  margin-top: 70px;
+}
+
+.img-fluid {
+  border-radius: 50%;
+}
+
+.lead {
+  list-style-type: none;
+  text-align: left;
 }
 
 .text {
@@ -159,7 +385,7 @@ section:not(.about):nth-child(even) {
 .buttom {
   list-style-type: none;
   display: inline-block;
-  margin-top: 5%;
+  margin-bottom: 3%;
   background: silver;
   border: 0;
   font-size: 20px;
@@ -203,7 +429,7 @@ section:not(.about):nth-child(even) {
   background-color: #fff;
 }
 
-cd-container {
+.cd-container {
   width: 90%;
   max-width: 1080px;
   margin: 0 auto;
@@ -212,7 +438,7 @@ cd-container {
   border-radius: 2px;
 }
 .cd-container::after {
-  content: "";
+  content: none;
   display: table;
   clear: both;
 }
@@ -236,7 +462,7 @@ Main components
   left: 25px;
   height: 100%;
   width: 4px;
-  background: #7e57c2;
+  background: orange;
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
@@ -283,11 +509,11 @@ Main components
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #7e57c2, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+  box-shadow: 0 0 0 4px orange, inset 0 2px 0 rgba(0, 0, 0, 0.08),
     0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline-img {
-  background: #673ab7;
+  background: orange;
 }
 @media only screen and (min-width: 1170px) {
   .cd-timeline-img {
@@ -457,10 +683,12 @@ i {
   transform: perspective(800px) rotateY(25deg);
   transition: 0.5s;
 }
+
+
+
 .container2 {
   max-width: 600px;
   max-height: 350px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -480,6 +708,10 @@ i {
 
 .pop:hover {
   transform: scale(1.1);
+}
+
+.iconify {
+  font-size: 30px;
 }
 
 .slider {
@@ -685,83 +917,211 @@ i {
 section {
   text-align: center;
 }
-.footer #button {
-  width: 35px;
-  height: 35px;
-  border: #727172 12px solid;
-  border-radius: 35px;
-  margin: 0 auto;
-  position: relative;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.footer #button:hover {
-  width: 35px;
-  height: 35px;
-  border: #3a3a3a 12px solid;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  position: relative;
-}
-.footer {
-  bottom: 0;
-  left: 0;
-  position: fixed;
-  width: 100%;
-  height: 2em;
-  overflow: hidden;
-  margin: 0 auto;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  z-index: 999;
-}
-.footer:hover {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-  height: 10em;
-}
-.footer #container {
-  margin-top: 5px;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  background: #3a3a3a;
-}
-.footer #cont {
-  position: relative;
-  top: -45px;
-  right: 190px;
-  width: 150px;
-  height: auto;
-  margin: 0 auto;
-}
-.footer_center {
-  width: 500px;
-  float: left;
-  text-align: center;
-}
-.footer h3 {
-  font-family: "Helvetica";
-  font-size: 30px;
-  font-weight: 100;
-  margin-top: 70px;
-  margin-left: 40px;
+.new_footer_area {
+    background: #fbfbfd;
 }
 
+.new_footer_top {
+    padding: 25px 0px 200px;
+    position: relative;
+      overflow-x: hidden;
+}
+.new_footer_area .footer_bottom {
+    padding-top: 5px;
+    padding-bottom: 50px;
+}
+.footer_bottom {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #7f88a6;
+    padding: 27px 0px;
+}
+.new_footer_top .company_widget p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #6a7695;
+    margin-bottom: 20px;
+}
+.new_footer_top .company_widget .f_subscribe_two .btn_get {
+    border-width: 1px;
+    margin-top: 20px;
+}
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+.btn_get:hover {
+    color: #fff;
+    background: #6754e2;
+    border-color: #6754e2;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.col-lg-3 {
+  width: 33.333%;
+}
+
+.new_footer_top .f_widget.about-widget .f_list li a:hover {
+    color: #5e2ced;
+}
+.new_footer_top .f_widget.about-widget .f_list li {
+    margin-bottom: 11px;
+}
+.f_widget.about-widget .f_list li:last-child {
+    margin-bottom: 0px;
+}
+.f_widget.about-widget .f_list li {
+    margin-bottom: 15px;
+}
+.f_widget.about-widget .f_list {
+    margin-bottom: 0px;
+}
+.new_footer_top .f_social_icon a {
+    width: 44px;
+    height: 44px;
+    line-height: 43px;
+    background: transparent;
+    border: 1px solid #e2e2eb;
+    font-size: 24px;
+}
+.f_social_icon a {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    font-size: 14px;
+    line-height: 45px;
+    color: #858da8;
+    display: inline-block;
+    background: #ebeef5;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+.ti-facebook:before {
+    content: "\e741";
+}
+.ti-twitter-alt:before {
+    content: "\e74b";
+}
+.ti-vimeo-alt:before {
+    content: "\e74a";
+}
+.ti-pinterest:before {
+    content: "\e731";
+}
+
+.btn_get_two {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    background: #5e2ced;
+    border-color: #5e2ced;
+    color: #fff;
+}
+
+.btn_get_two:hover {
+    background: transparent;
+    color: #5e2ced;
+}
+
+.new_footer_top .f_social_icon a:hover {
+    background: #5e2ced;
+    border-color: #5e2ced;
+  color:white;
+}
+.new_footer_top .f_social_icon a + a {
+    margin-left: 4px;
+}
+.new_footer_top .f-title {
+    margin-bottom: 30px;
+    color: #263b5e;
+}
+.f_600 {
+    font-weight: 600;
+}
+.f_size_18 {
+    font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #4b505e;
+}
+.new_footer_top .f_widget.about-widget .f_list li a {
+    color: #6a7695;
+}
+
+
+.new_footer_top .footer_bg {
+    position: absolute;
+    bottom: 0;
+    background: url("http://droitthemes.com/html/saasland/img/seo/footer_bg.png") no-repeat scroll center 0;
+    width: 100%;
+    height: 266px;
+}
+
+.new_footer_top .footer_bg .footer_bg_one {
+    background: url("https://1.bp.blogspot.com/-mvKUJFGEc-k/XclCOUSvCnI/AAAAAAAAUAE/jnBSf6Fe5_8tjjlKrunLBXwceSNvPcp3wCLcBGAsYHQ/s1600/volks.gif") no-repeat center center;
+    width: 330px;
+    height: 105px;
+  background-size:100%;
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    -webkit-animation: myfirst 22s linear infinite;
+    animation: myfirst 22s linear infinite;
+}
+
+.new_footer_top .footer_bg .footer_bg_two {
+    background: url("https://1.bp.blogspot.com/-hjgfxUW1o1g/Xck--XOdlxI/AAAAAAAAT_4/JWYFJl83usgRFMvRfoKkSDGd--_Sv04UQCLcBGAsYHQ/s1600/cyclist.gif") no-repeat center center;
+    width: 88px;
+    height: 100px;
+  background-size:100%;
+    bottom: 0;
+    left: 38%;
+    position: absolute;
+    -webkit-animation: myfirst 30s linear infinite;
+    animation: myfirst 30s linear infinite;
+}
+
+
+
+@-moz-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes myfirst {
+  0% {
+    left: -25%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+/*************footer End*****************/
+
+
+/* Icons */
 .social-icons {
   display: flex;
   align-items: center;
@@ -773,8 +1133,8 @@ section {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   margin: 0 0.5rem;
   margin-left: 7px;
   border-radius: 50%;
@@ -827,35 +1187,4 @@ section {
 .social-icon i {
   position: relative;
   top: 1px;
-}
-
-/* Tooltips */
-.tooltip {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  padding: 0.8rem 1rem;
-  border-radius: 40px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  opacity: 0;
-  pointer-events: none;
-  text-transform: uppercase;
-  transform: translate(-50%, -100%);
-  transition: all 0.3s ease;
-  z-index: 1;
-}
-.tooltip:after {
-  display: block;
-  position: absolute;
-  bottom: 1px;
-  left: 50%;
-  width: 0;
-  height: 0;
-  content: "";
-  border: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: transparent;
-  transform: translate(-50%, 100%);
 }
