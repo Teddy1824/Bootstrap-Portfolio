@@ -538,6 +538,10 @@ section:not(.about):nth-child(even) {
 
 .container {
   opacity: 0.8;
+}
+
+.container4 {
+  opacity: 0.8;
   margin-top: -110px;
 }
 
