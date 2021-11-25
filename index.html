@@ -16,6 +16,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
    <link rel = "icon" href = "images/icon/bear2.jpg" type = "image">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Loader -->
@@ -36,17 +37,17 @@
   <div class='middle'></div>
   <div class='bottom'></div>
 </div>
-< class="menu-box">
+<div class="menu-box" onclick="menu()">
   <div class="menu2-items">
     <hr>
-    <a href="#home" class="item"><span class="iconify" data-icon="ant-design:home-outlined"></span> Home</a>
-    <a href="#about" class="item"><span class="iconify" data-icon="bi:person-fill"></span> About</a>
-    <a href="#work&edu"class="item"><span class="iconify" data-icon="ph:books-duotone"></span> Work & Education</a>
-    <a href="#skills"class="item"><span class="iconify" data-icon="foundation:social-skillshare"></span> Skills</a>
-    <a href="#pro"class="item"><span class="iconify" data-icon="ant-design:project-outlined"></span> My Projects</a>
-    <a href="#test"class="item"><span class="iconify" data-icon="bi:people-fill"></span> Testimonials</a>
-    <a href="#contact"class="item"><span class="iconify" data-icon="fluent:call-16-filled"></span> Contact Me</a>
-  </>
+    <div class="item"><a href="#home"><span class="iconify" data-icon="ant-design:home-outlined"></span> Home</a></div>
+    <div class="item"><a href="#about"><span class="iconify" data-icon="bi:person-fill"></span> About</a></div>
+    <div class="item"><a href="#work&edu"><span class="iconify" data-icon="ph:books-duotone"></span> Work & Education</a></div>
+    <div class="item"><a href="#skills"><span class="iconify" data-icon="foundation:social-skillshare"></span> Skills</a></div>
+    <div class="item"><a href="#pro"><span class="iconify" data-icon="ant-design:project-outlined"></span> My Projects</a></div>
+    <div class="item"><a href="#test"><span class="iconify" data-icon="bi:people-fill"></span> Testimonials</a></div>
+    <div class="item"><a href="#contact"><span class="iconify" data-icon="fluent:call-16-filled"></span> Contact Me</a></div>
+  </div>
   <hr>
 </div>
       <!-- Navbar -->
@@ -119,7 +120,7 @@
 			<div class="cd-timeline-img cd-picture">
 			</div>
 
-			<div class="cd-timeline-content">
+			<div class="cd-timeline-content" data-aos="zoom-in-up">
 				<h2>Hyacinth Primary School (Lenteguer)</h2>
 				<p>Graduated from Hyacinth Primary School <br>(2014)</p>
 			</div> 
@@ -129,7 +130,7 @@
 			<div class="cd-timeline-img cd-movie">
 			</div> 
 
-			<div class="cd-timeline-content">
+			<div class="cd-timeline-content" data-aos="zoom-in-up">
 				<h2>Athlone High School (grade 12)</h2>
 				<p>Changed schools due to the school deciding to remove one the main subjects I did which was Physical Sciences<br>(early Feb 2019)</p>
 			</div> 
@@ -139,7 +140,7 @@
 			<div class="cd-timeline-img cd-picture">
 			</div> 
 
-			<div class="cd-timeline-content">
+			<div class="cd-timeline-content" data-aos="zoom-in-up">
 				<h2>Bridgetown High School (grade 12)</h2>
 				<p>Graduated the a Diploma Certificate.<br>(Nov 2019)</p>
 			</div> 
@@ -149,7 +150,7 @@
 			<div class="cd-timeline-img cd-location">
 			</div> 
 
-			<div class="cd-timeline-content">
+			<div class="cd-timeline-content" data-aos="zoom-in-up">
 				<h2>Haagen Dazs (Waterfront)</h2>
 				<p>Worked at Haagen Dazs as an Ice Cream Scooper for a duration of a month.<br>(Dec 2019 - Jan 2020)</p>
 			</div> 
@@ -159,7 +160,7 @@
 			<div class="cd-timeline-img cd-location">
 			</div> 
 
-			<div class="cd-timeline-content">
+			<div class="cd-timeline-content" data-aos="zoom-in-up">
 				<h2>iCollege</h2>
 				<p>Enroled at iCollege doing IT User Support for a duration of a year.<br>(March 2020)</p>
 			</div> 
@@ -169,7 +170,7 @@
 			<div class="cd-timeline-img cd-movie">
 			</div> 
 
-			<div class="cd-timeline-content">
+			<div class="cd-timeline-content" data-aos="zoom-in-up">
 				<h2>Life Choices</h2>
 				<p>Currently at Life Choices Academy for Coding for a duration of a year learning the following:</p>
         <ul class="content-skills">
@@ -457,9 +458,11 @@
 </section>
 <!--Footer-->
     <script src="JS/bootstrap.bundle.min.js"></script>
-    <script src="JS/myjs.js"></script>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/hamburger-menu.js"></script>
     <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
+<script src="JS/myjs.js"></script>
   </body>
 </html>
