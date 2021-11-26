@@ -242,7 +242,7 @@ Due to the split circle of progress-left and progress right, we must use the ani
   border-width: 4px 0;
   padding: 1em 0em;
   left: 50%;
-  width: 30em;
+  width: 100%;
   margin: 0 0 0 0em;
   text-align: center;
   justify-content: center;
@@ -1143,4 +1143,8 @@ section {
 .social-icon i {
   position: relative;
   top: 1px;
+}
+
+.bear {
+  width: 100%;
 }
